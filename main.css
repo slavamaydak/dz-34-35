@@ -1,0 +1,274 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+}
+
+.header {
+  background-color: #0a2640;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.header__meny::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  background: #1c3d5b;
+  width: 1293px;
+  height: 1293px;
+  border-radius: 12293px;
+  top: -123%;
+  right: -45%;
+  position: absolute;
+}
+
+.header__meny {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5vh;
+  margin-bottom: 50px;
+}
+
+.header__logo {
+  height: 42px;
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  color: white;
+  text-decoration: none;
+}
+
+.header__link--wite {
+  color: rgb(1, 1, 53);
+  background-color: white;
+  border-radius: 20px;
+  padding: 8px 40px 8px 40px;
+}
+
+.header__links {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__foundation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  width: 100%;
+  width: 535px;
+  display: inline-block;
+}
+
+.header__main-text {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 45px;
+  color: white;
+}
+
+.header__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(198, 198, 198);
+  margin: 20px 0px 70px 0px;
+}
+
+.header__buttom-1 {
+  padding: 16px 56px;
+  background: #65e4a3;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(1, 1, 53);
+  margin-right: 25px;
+}
+
+.header__buttom-2 {
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+  padding: 16px 56px;
+}
+
+.header__ending-foto {
+  margin-top: 90px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.header__ending-foto-2 {
+  position: absolute;
+  right: 140px;
+  width: 100%;
+}
+
+.labels {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.labels::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #0a2640 0%,
+    rgba(10, 38, 64, 0.109375) 31.6%,
+    rgba(10, 38, 64, 0) 72.89%,
+    #0a2640 97.87%
+  );
+}
+
+@media (max-width: 1330px) {
+  .header__foto {
+    display: none;
+  }
+
+  .header__foundation {
+    text-align: center;
+  }
+
+  .header__content {
+    margin: auto;
+  }
+
+  .header__ending-foto-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 810px) {
+  .header__link {
+    display: none;
+  }
+
+  .header__link--wite {
+    display: inline;
+  }
+
+  .header__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    width: initial;
+  }
+}
+
+@media (max-width: 587px) {
+  .header__buttom-1 {
+    margin-bottom: 50px;
+    display: inline-block;
+  }
+}
+
+.second {
+  background-color: #0a2640;
+}
+
+.second__title {
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "Manrope";
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 40px;
+  padding-top: 100px;
+}
+
+.second__cards {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.second__card {
+  width: 100%;
+  max-width: 270px;
+  box-shadow: 0px 6px 16px 4px rgba(47, 223, 132, 0.15);
+  border-radius: 10px;
+  padding: 32px 60px 32px 28px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.second__card__title {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin: 25px 0px 15px 0px;
+}
+
+.second__card__text {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(188, 188, 188);
+}
+
+.second__foto {
+  width: 100%;
+  max-width: 348px;
+  position: absolute;
+  top: 995px;
+  left: 1030px;
+  border-radius: 20px;
+}
+
+.second__button {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  background-color: #65e4a3;
+  padding: 14px 32px;
+  text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  .second__foto {
+    display: none;
+  }
+
+  .second__cards {
+    margin: auto;
+  }
+}
+
+@media (max-width: 955px) {
+}
